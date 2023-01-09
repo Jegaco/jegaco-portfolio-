@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --accent: rgb(241, 206, 140);
+    --pop: #bb3e03;
+}
+
+@font-face {
+    font-family: "Blacksword";
+    src: url("/assets/fonts/Blacksword.otf");
+}
+
+@font-face {
+    font-family: "Loves";
+    src: url("/assets/fonts/LOVES.ttf");
+}
+
+body {
+margin: 0;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background: #fff;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 25px 30px;
+    background: rgb(241, 206, 140, 0.8);
+    color: black;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px;
+}
+
+.navbar ul li {
+    font-family: "Loves", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    transition: all .8s ease;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 25px 30px;
+    transition: all .5s ease;
+    color:black;
+}
+
+.navbar ul li a:hover {
+    background-color: var(--pop);
+    color: white;
+    box-shadow: 0 0 30px rgb(0, 0, 0, 0.5);
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.home::before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: url("/assets/images/IMG-7016-copy.jpg") no-repeat center  center/cover;
+    height: 100vh;
+    width: 100%;
+    opacity: .6;
+    z-index: -1;
+}
+
+.main {
+    padding: 20px;
+    border-left: 5px solid var(--pop);
+    border-bottom: 5px solid var(--pop);
+    /* background-color: rgba(233, 233, 233, 0.445); */
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.aboutMe {
+    flex: 1;
+    padding: 20px;
+    font-family: "Loves", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 46px;
+    text-align: center;
+    background-color: var(--accent);
+    color: black;
+    /* text-shadow: #fff 0px 0px 5px; */
+}
+
+.break1 {
+    background-color: rgb(143, 143, 143);
+    height: auto;
+    width: 10px;
+}
+
+.intro {
+    display: inline-block;
+    flex: 2 0;
+    text-align: left;
+    padding: 25px;
+    background-color: var(--accent);
+}
+
+.work {
+    flex: 1;
+    padding: 20px;
+    font-family: "Loves", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 46px;
+    vertical-align: middle;
+    line-height: normal;
+    text-align: center;
+    background-color: var(--accent);
+    color: black;
+    
+}
+
+.work h2 {
+    vertical-align: middle;
+    line-height: normal;
+}
+.grid-container {
+    display: grid;
+    flex: 2;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    text-align: center;
+    padding: 25px;
+    background-color: var(--accent);
+}
+
+.grid-item {
+    text-align: center;
+    padding: 100px 120px;
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.grid-item:hover {
+    box-shadow: 0 0 30px rgb(0, 0, 0, 0.5);
+}
+
+.grid-item a {
+    text-decoration: none;
+    font-size: 20px;
+    border: 30px;
+    color: black;
+}
+
+.grid-item a:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+#name {
+    font-family: "Blacksword", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 86px;
+    text-align: center;
+    color: #fff;
+    text-shadow: black 0px 0px 5px;
+}
