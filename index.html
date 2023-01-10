@@ -12,16 +12,13 @@
     <nav class="navbar">
         <ul class="links">
             <li>
-                <a href="#">About me</a>
+                <a href="#about-me">About me</a>
             </li>
             <li>
-                <a href="#">Work</a>
+                <a href="#work">Work</a>
             </li>
             <li>
-                <a href="#">Conatct Me</a>
-            </li>
-            <li>
-                <a href="#">Placeholder-4</a>
+                <a href="#contact">Contact Me</a>
             </li>
         </ul>
     </nav>
@@ -35,7 +32,7 @@
 
     <main class="about">
         <aside class="aboutMe">
-            <h2>About me</h2>
+            <h2 id="about-me">About me</h2>
         </aside>
 
         <span class="break1"></span>
@@ -52,36 +49,41 @@
 
     <main class="grid">
         <aside class="work"> 
-            <h2>Work</h2>
+            <h2 id="work">Work</h2>
         </aside>
 
         <span class="break1"></span>
-
+        
         <section class="grid-container">
-            <div class="grid-item grid-col-span-2">
-                <a href="https://jegaco.github.io/horiseon-seo-refactor/#social-media-marketing" target="_blank">Code Refactor
-                 </a>
-            </div>
+            <a href="https://jegaco.github.io/horiseon-seo-refactor/#social-media-marketing" target="_blank" class="grid-col-span-2">
+                <div class="grid-item ">
+                    <h3>Code Refactor</h3>
+                </div>
+            </a>
             
-            <div class="grid-item">
-                <a href="https://jegaco.github.io/jegaco-portfolio/" target="_blank">Professonal Portolio
-                 </a>
-            </div>
-
-            <div class="grid-item">
-                <a href="https://github.com/Jegaco" target="_blank">Placeholder-3
-                 </a>
-            </div>
-
-            <div class="grid-item">
-                <a href="https://github.com/Jegaco" target="_blank">Placeholder-4
-                 </a>
-            </div>
-
-            <div class="grid-item">
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Placeholder-5
-                 </a>
-            </div>
+            <a href="https://jegaco.github.io/jegaco-portfolio/" target="_blank">
+                <div class="grid-item professional-portfolio">
+                 <h3>Professional Portolio</h3>
+                </div>
+            </a>
+            
+            <a href="https://github.com/Jegaco" target="_blank">
+                <div class="grid-item placeholder-3">
+                    <h3>Placeholder-3</h3>
+                </div>
+            </a>
+            
+            <a href="https://github.com/Jegaco" target="_blank">
+                <div class="grid-item placeholder-4">
+                    <h3>Placeholder-4</h3>
+                </div>
+            </a>
+            
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <div class="grid-item placeholder-5">
+                    <h3>Placeholder-5</h3>
+                </div>
+            </a>
         </section>
     </main>
 </body>
@@ -89,11 +91,11 @@
 <br>
 
 <footer>
-    <h3>Contact me</h3>
+    <h3 id="contact">Contact me</h3>
     <ul class="contacts">
-        <a href="tel:555-555-5555">Phone Number</a>
-        <a href="mailto:jeffgcorpuz@gmail.com">jeffgcorpuz@gmail.com</a>
-        <a href="https://github.com/Jegaco">GitHub</a>
+        <li><a href="tel:555-555-5555">Phone Number</a></li>
+        <li><a href="mailto:jeffgcorpuz@gmail.com">jeffgcorpuz@gmail.com</a></li>
+        <li><a target="_blank" href="https://github.com/Jegaco">GitHub</a></li>
     </ul>
 </footer>
 </html>
