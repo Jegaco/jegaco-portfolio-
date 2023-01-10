@@ -12,12 +12,12 @@
 /* font-face allowed me to use custom fonts the better style my portfolio */
 @font-face {
     font-family: "Blacksword";
-    src: url("/assets/fonts/Blacksword.otf");
+    src: url("../fonts/Blacksword.otf");
 }
 
 @font-face {
     font-family: "Loves";
-    src: url("/assets/fonts/LOVES.ttf");
+    src: url("../fonts/LOVES.ttf");
 }
 
 
@@ -86,7 +86,7 @@ main {
     position: absolute;
     top: 0px;
     right: 0px;
-    background: url("/assets/images/IMG-7016-copy.jpg") no-repeat center  center/cover;
+    background: url("../images/IMG-7016-copy.jpg") no-repeat center  center/cover;
     height: 100vh;
     width: 100%;
     z-index: -1;
@@ -200,25 +200,25 @@ main {
 /* FIrst item in grid styled to allow it to span/stretch to 2 the second column allowing it to be larger than the other cells */
 .grid-col-span-2 {
     grid-column: span 2;
-    background-image: url("/assets/images/Horiseon\ Social\ Solution\ Services.png");
+    background-image: url("../images/Horiseon\ Social\ Solution\ Services.png");
     background-size: cover;
     background-position: center;
 }
 
 .professional-portfolio {
-    background-image: url("/assets/images/IMG-7016-copy.jpg");
+    background-image: url("../images/IMG-7016-copy.jpg");
 }
 
 .placeholder-3 {
-    background-image: url("/assets/images/aloha-vector.jpg");
+    background-image: url("../images/aloha-vector.jpg");
 }
 
 .placeholder-4 {
-    background-image: url("/assets/images/palm-tree-vector.jpg");
+    background-image: url("../images/palm-tree-vector.jpg");
 }
 
 .placeholder-5 {
-    background-image: url("/assets/images/surfboard-vector.jpg");
+    background-image: url("../images/surfboard-vector.jpg");
 }
 /* About me section styling starts */
 
