@@ -20,9 +20,9 @@ The required criteria are as follows:
 * WHEN I resize the page or view the site on various screens and devices, THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Links
-* [Link to the deployed website](https://jegaco.github.io/jegaco-portfolio/)
+* [Link to the deployed website](https://jegaco.github.io/jegaco-portfolio-/)
 
-* [Link to the code repository](https://github.com/Jegaco/jegaco-portfolio)
+* [Link to the code repository](https://github.com/Jegaco/jegaco-portfolio-)
 
 ## Preview
 Preview of application viewed on a desktop web browser.
