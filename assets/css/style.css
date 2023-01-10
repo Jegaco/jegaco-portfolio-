@@ -273,6 +273,15 @@ footer ul li a:hover {
     text-shadow: black 0px 0px 5px;
 }
 
-@media screen {
-    
+@media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the content in the main, navbar, footer sections*/
+    main,
+    nav,
+    footer {
+      flex-direction: column;
+    }
+    /* Make the sidebar stack below the body */
+    aside {
+      /* order: 2; */
+    }
 }
