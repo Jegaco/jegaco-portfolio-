@@ -3,12 +3,13 @@
     padding: 0;
     margin: 0;
 }
-
+/* In my root I established 2 varibales I commonly used to allow easier styling*/
 :root {
     --accent: rgb(241, 206, 140);
     --pop: #bb3e03;
 }
 
+/* font-face allowed me to use custom fonts the better style my portfolio */
 @font-face {
     font-family: "Blacksword";
     src: url("/assets/fonts/Blacksword.otf");
@@ -18,6 +19,7 @@
     font-family: "Loves";
     src: url("/assets/fonts/LOVES.ttf");
 }
+
 
 body {
 margin: 0;
@@ -30,6 +32,7 @@ main {
     flex-wrap: wrap;
 }
 
+/* navbar styling starts */
 .navbar {
     display: flex;
     justify-content: center;
@@ -43,6 +46,7 @@ main {
     list-style: none;
 }
 
+
 .navbar ul li {
     font-family: "Loves", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 35px;
@@ -53,16 +57,19 @@ main {
 .navbar ul li a {
     text-decoration: none;
     padding: 25px 30px;
-    transition: all .5s ease;
+    transition: all .8s ease;
     color:black;
 }
 
+/* navbar hover effects */
 .navbar ul li a:hover {
     background-color: var(--pop);
     color: white;
     box-shadow: 0 0 30px rgb(0, 0, 0, 0.5);
 }
+/* navbar styling ends */
 
+/* background styling between navbar and main content area starts */
 .home {
     display: flex;
     flex-direction: column;
@@ -73,6 +80,7 @@ main {
     color: white;
 }
 
+/* styling background image */
 .home::before {
     content:"";
     position: absolute;
@@ -93,7 +101,9 @@ main {
     top: 30%;
     left: 10%;
 }
+/* background styling between navbar and main content area ends*/
 
+/* About me section styling starts */
 .aboutMe {
     flex: 1;
     padding: 20px;
@@ -106,7 +116,8 @@ main {
     /* text-shadow: #fff 0px 0px 5px; */
 }
 
-.break1 {
+/* styling for span seperating "About Me" and "Work" from their repsective paragraphs */
+.break-1 {
     background-color: rgb(143, 143, 143);
     height: auto;
     width: 10px;
@@ -119,7 +130,9 @@ main {
     padding: 25px;
     background-color: var(--accent);
 }
+/* About me section styling starts */
 
+/* Work section styling starts */
 .work {
     display: flex;
     flex: 1;
@@ -131,7 +144,7 @@ main {
     color: black;
     
 }
-
+/* Work header styling */
 .work h2 {
     display: flex;
     font-family: "Loves", Verdana, Geneva, Tahoma, sans-serif;
@@ -139,7 +152,9 @@ main {
     justify-content: center;
     align-items: center;
 }
+/* Work section styling starts */
 
+/* Grid section styling starts */
 .grid-container {
     display: grid;
     flex: 2;
@@ -150,6 +165,7 @@ main {
     background-color: var(--accent);
 }
 
+/* grid cell styling */
 .grid-item {
     display: flex;
     height: 210px;
@@ -158,10 +174,12 @@ main {
     background-position: center;
 }
 
+/* grid cells hover effects */
 .grid-item:hover {
     box-shadow: 0 0 30px rgb(0, 0, 0, 0.5);
 }
 
+/* header 3 styling in grid cells */
 .grid-item h3{
     display: flex;
     position: absolute;
@@ -174,11 +192,12 @@ main {
     /* rgba(40, 120, 240, 0.616); */
 }
 
+/* header 3 in grid cells hover effects */
 .grid-item h3:hover {
     text-decoration: none;
     color: #fff;
 }
-
+/* FIrst item in grid styled to allow it to span/stretch to 2 the second column allowing it to be larger than the other cells */
 .grid-col-span-2 {
     grid-column: span 2;
     background-image: url("/assets/images/Horiseon\ Social\ Solution\ Services.png");
@@ -201,7 +220,9 @@ main {
 .placeholder-5 {
     background-image: url("/assets/images/surfboard-vector.jpg");
 }
+/* About me section styling starts */
 
+/* footer contact links section styling starts */
 footer {
     display: flex;
     justify-content: center;
@@ -233,15 +254,17 @@ footer ul li {
 footer ul li a {
     text-decoration: none;
     padding: 25px 30px;
-    transition: all .5s ease;
     color:black;
 }
 
+/* footer hover effects */
 footer ul li a:hover {
     background-color: var(--pop);
     color: white;
     box-shadow: 0 0 30px rgb(0, 0, 0, 0.5);
 }
+/* footer contact links section styling starts */
+
 #name {
     font-family: "Blacksword", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 86px;
