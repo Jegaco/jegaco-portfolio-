@@ -203,22 +203,27 @@ main {
     background-image: url("../images/Horiseon\ Social\ Solution\ Services.png");
     background-size: cover;
     background-position: center;
+    grid-area: Code Refactor;
 }
 
 .professional-portfolio {
     background-image: url("../images/IMG-7016-copy.jpg");
+    grid-area: Professional Portfolio;
 }
 
 .placeholder-3 {
-    background-image: url("../images/aloha-vector.jpg");
+    background-image: url("../images/Crime\ Tracker\ \(1\).png");
+    grid-area: Placeholder-3;
 }
 
 .placeholder-4 {
     background-image: url("../images/palm-tree-vector.jpg");
+    grid-area: Placeholder-4;
 }
 
 .placeholder-5 {
     background-image: url("../images/surfboard-vector.jpg");
+    grid-area: Placeholder-5;
 }
 /* About me section styling starts */
 
@@ -248,7 +253,7 @@ footer ul li {
     font-family: "Loves", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 35px;
     font-weight: bold;
-    transition: all .8s ease;
+    transition: all 5s ease;
 }
 
 footer ul li a {
@@ -280,8 +285,20 @@ footer ul li a:hover {
     footer {
       flex-direction: column;
     }
-    /* Make the sidebar stack below the body */
-    aside {
-      /* order: 2; */
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "Code Refactor"
+
+            "Professional Portfolio"
+
+            "Placeholder-3"
+
+            "Placeholder-4"
+
+            "Placeholder-5";
+        text-align: center;
     }
 }
